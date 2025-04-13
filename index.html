@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Bliss | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ff914d;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #222;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 80vh;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .hero .content {
+      max-width: 500px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      animation: slideUp 1.2s ease-out;
+    }
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero button {
+      background-color: #ff914d;
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .hero button:hover {
+      background-color: #e56c1f;
+      transform: scale(1.05);
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+      background-color: #fff3e0;
+      animation: fadeIn 2s ease-in;
+    }
+    .feature {
+      max-width: 300px;
+      text-align: center;
+      transform: scale(0.9);
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: scale(1);
+    }
+    .feature img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ff914d;
+      color: white;
+      animation: slideUp 1.5s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Burger Bliss</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h2>Juiciest Burgers in Town</h2>
+      <p>Satisfy your cravings with our delicious, handcrafted burgers made with love and the finest ingredients.</p>
+      <button>Order Now</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="https://img.icons8.com/emoji/96/hamburger-emoji.png" alt="Burger">
+      <h3>100% Fresh</h3>
+      <p>Only the freshest ingredients used in every bite.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/color/96/french-fries.png" alt="Fries">
+      <h3>Perfect Pairing</h3>
+      <p>Fries, shakes, and more to complement your meal.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/emoji/96/delivery-truck.png" alt="Delivery">
+      <h3>Fast Delivery</h3>
+      <p>Hot and delicious burgers delivered at your door.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Burger Bliss. All rights reserved.</p>
+  </footer>
+</body>
+</html>
